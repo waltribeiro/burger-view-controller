@@ -1,3 +1,19 @@
+//JAWSDB
+require("dotenv").config();
+if(process.env.JAWSDB_URL) {
+  // Heroku MySQL (JawsDB)
+  connection = mysql.createConnection(process.env.JAWSDB_URL);
+} else {
+  // Local MySQL
+  connection = mysql.createConnection({
+    host: "localhost",
+    port: 3306,
+    user: "root",
+    password: process.env.MYSQL_PASS,
+    database: "burgers_db"
+  });
+}
+
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
 $(function() {
   $(".change-burger").on("click", function(event) {
@@ -58,3 +74,4 @@ $(function() {
     );
   });
 });
+
