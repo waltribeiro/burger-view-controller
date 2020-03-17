@@ -1,14 +1,39 @@
-* **Files**
+# burger-for-life
+Burger for Life! is a restaurant app that lets users input the names of burgers they'd like to eat.
 
-  * `22-CatsAppProblem`
+## Demonstration:
+![burger view controller](public/img/hypno-burger-1.png)
 
-* **Instructions**
+## Installation: 
+- Run `npm install`
+- Run `dotevn`
+- Run `mysql`
+- Run `inquirer`
+- Run `express-handlebars`
 
-  * Add a delete button into the `index.handlebars` file next to each cat.
+## Description:
 
-  * Add on to the following:
+In this assignment, I create a burger logger with MySQL, Node, Express, Handlebars and a homemade ORM (yum!). I also follow the MVC design pattern; use Node and MySQL to query and route data in your app, and Handlebars to generate your HTML.
 
-  * The `cats.js` file to add a jQuery event handler for the delete button.
-  * The ORM to include a delete key and function
-  * The cat model to include a delete key and function that uses the ORM
-  * The `catsController.js` file to have a `/api/cats/:id` delete route, to call the delete key of the cat model, and to pass in arguments as necessary
+## Create a MVC file structure: 
+
+- 1: Config (connection.js and orm.js)
+- 2: Controllers (burger_controller.js)
+- 3: db (schema.sql and seeds.sql)
+- 4: models (burgers.js)
+- 5: node_modules
+- 6: Package.json
+- 7: public [assets(css and img)]
+- 8: server.js
+- 9: views (handlerbars)
+
+Once the files are set up, we need to create the connection among them.
+
+
+## Link to burger-for-life on GitHub:
+
+https://github.com/waltribeiro/burger-view-controller
+
+## Link on Heroku:
+https://burger-view-controller.herokuapp.com/
+
