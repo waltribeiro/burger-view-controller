@@ -1,5 +1,5 @@
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
-$(function() {
+$(document).ready(function() {
   $(".change-burger").on("click", function(event) {
     var id = $(this).data("id");
     var newBurger = $(this).data("newburger");
@@ -14,7 +14,7 @@ $(function() {
       data: newBurgerState
     }).then(
       function() {
-        console.log("changed burger to", newBurger);
+        // console.log("changed burger to", newBurger);
         // Reload the page to get the updated list
         location.reload();
       }
@@ -25,9 +25,11 @@ $(function() {
     // Make sure to preventDefault on a submit event.
     event.preventDefault();
 
+    console.log("Add a burger");
+
     var newBurger = {
       name: $("#ca").val().trim(),
-      sleepy: $("[name=burger]:checked").val().trim()
+      devoured: 0
     };
 
     // Send the POST request.
@@ -36,7 +38,7 @@ $(function() {
       data: newBurger
     }).then(
       function() {
-        console.log("created new burger");
+        // console.log("created new burger");
         // Reload the page to get the updated list
         location.reload();
       }
