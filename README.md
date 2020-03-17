@@ -1,5 +1,5 @@
-# burger-for-life
-Burger for Life! is a restaurant app that lets users input the names of burgers they'd like to eat.
+# Burger View Controller
+Burger View Controller is a burger restaurant app based off of the Model View Controller. Customers can input the names of burgers they'd like to eat.
 
 ## Demonstration:
 ![burger view controller](public/img/hypno-burger-1.png)
@@ -13,7 +13,7 @@ Burger for Life! is a restaurant app that lets users input the names of burgers 
 
 ## Description:
 
-In this assignment, I create a burger logger with MySQL, Node, Express, Handlebars and a homemade ORM (yum!). I also follow the MVC design pattern; use Node and MySQL to query and route data in your app, and Handlebars to generate your HTML.
+Using MySQL, Node, Express, Handlebars, an ORM - you can create a burger, add it to the menu, and devour it. The name buger-view-controller is because I follow the MVC design pattern.
 
 ## Create a MVC file structure: 
 
@@ -30,7 +30,7 @@ In this assignment, I create a burger logger with MySQL, Node, Express, Handleba
 Once the files are set up, we need to create the connection among them.
 
 
-## Link to burger-for-life on GitHub:
+## Link to burger-view-controller on GitHub:
 
 https://github.com/waltribeiro/burger-view-controller
 
