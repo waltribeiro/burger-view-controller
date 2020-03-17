@@ -30,10 +30,11 @@ Using MySQL, Node, Express, Handlebars, an ORM - you can create a burger, add it
 Once the files are set up, we need to create the connection among them.
 
 
-## Link to burger-view-controller on GitHub:
+## Link on GitHub:
 
 https://github.com/waltribeiro/burger-view-controller
 
 ## Link on Heroku:
+
 https://burger-view-controller.herokuapp.com/
 
